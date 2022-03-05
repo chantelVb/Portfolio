@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?Family=Heebo:300&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+html{
+    /* to give fade in affect when set to dark mode */
+    transition: all 0.3s ease-in;
+}
+/* will be changed with JS for dark mode */
+html.dark{
+    --primary-color: #fff;
+    --secondary-color:#333
+}
+html.dark{
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+body {
+   font-family: 'Heebo', sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0;
+}
+/* light/dark mode button */
+.toggle{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 70px;
+}
+.toggle:focus{
+    /* when you focus on the button you can see an outline, so to get rid of the outline... */
+    outline: none;
+}
+
+/* clock container, wraps around needles and turning point */
+.clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+.clock-border{
+    border-radius: 50%;
+    box-shadow: rgb(209, 208, 208) 0 0 5px 5px;
+    /* height: 150%;
+    width: 110%; */
+    padding: 10%;
+}
+.clock{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+         
+ }
+.needle{
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+.needle.hour{
+    /*                     X      Y */
+    transform: translate(-50%, -100%) rotate(0deg);
+    
+}
+.needle.minute{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+.needle.second{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: crimson;
+}
+.centre-point{
+    background-color: crimson;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.centre-point::after{
+    content: "";
+    background-color: var(--primary-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.time{
+    font-size: 60px;
+    margin-top: 10%;
+}
+.date{
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+.date .circle{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+}
+
