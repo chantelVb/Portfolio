@@ -1,0 +1,200 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+  p{
+    color: #8f8f8f;
+}
+
+/* Sections */
+
+.coloured-section{
+    background-color: #ff4c68;
+  color: #fff;
+}
+
+/* Title page */
+
+.title-heading{
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 7% 15% ;
+}
+
+
+/* navigation bar */
+.navbar-nav {
+    position: relative;
+    left: 35.8rem;
+  }
+.navbar {
+  padding-bottom: 2.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.12rem;
+}
+
+/* Download buttons */
+
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+button i {
+  margin: 0 0.5rem 0 0;
+}
+
+/*  Title Image */
+.title-image {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 23%;
+}
+
+
+/* Features section */
+
+#features{
+    padding: 7% 23%;
+    background-color: #fff;
+    position: relative;
+   
+}
+
+.feature-column {
+    text-align: center;
+}
+
+.icons {
+  color: #ef8172;
+  /* the code fa-4x can be written into the html as apposed to using font size */
+  font-size: 5rem;
+  margin: 0 0 1.5rem 0;
+}
+.icons:hover {
+  color: #ff4c68;
+}
+.feature-headings {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.feature-text {
+  padding: 1rem 2rem;
+  font-size: smaller;
+  color: #8f8f8f;
+}
+
+/* Testimonials */
+
+#testimonials {
+  background-color: #ef8172;
+  
+}
+
+.testimonial-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0 10rem 2rem;
+  line-height: 2;
+}
+
+.testimonial-img {
+  border-radius: 100%;
+  width: 10%;
+  margin: 0 1rem 0 0;
+}
+
+
+/* Press */
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3rem;
+}
+.press-img {
+  width: 13%;
+  padding: 1rem;
+}
+.carousel-item{
+    padding: 5rem 15rem;
+}
+
+/* Pricing */
+
+#pricing{
+    padding: 100px;
+    
+}
+.pricing-cards{
+    padding: 3% 2%;
+}
+.price-text{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+
+/* Call to Action */
+
+#cta{
+    padding: 5rem 0 3rem;
+      
+}
+.cta-text{
+    font-weight:bold;
+    font-size: 3rem;
+    width: 65%;
+   margin: 0 auto;
+    line-height: 1.5;
+}
+
+#footer{
+    margin: 5rem 0 0;
+}
+a{
+    color: rgb(34, 34, 34);
+    padding: 0.5rem;
+}
+.copy-text{
+    margin: 1rem;
+}
+
+@media (max-width: 1120px){
+
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        width: 55%;
+        transform: rotate(0);
+    }
+}
+@media (max-width: 1191px){
+    .testimonial-text{
+        padding: 0 0 2rem;
+    }
+    .testimonial-img{
+        width: 30%;
+    }
+}
