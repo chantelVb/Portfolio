@@ -3,7 +3,7 @@ var pickRandomNumber1 = Math.floor(Math.random()*6)+1;
 
 var randomDiceImage = "dice" + pickRandomNumber1 + ".png";
 
-var imageSource = "https://github.com/chantelVb/Portfolio/blob/main/My-Dice-Game/Images/" + randomDiceImage;
+var imageSource = "My-Dice-Game/Images/" + randomDiceImage;
 
 var image1 = document.querySelectorAll("img")[0];
 
@@ -15,7 +15,7 @@ var pickRandomNumber2 = Math.floor(Math.random()*6)+1;
 
 var randomDiceImage = "dice" + pickRandomNumber2 + ".png";
 
-var imageSource = "https://github.com/chantelVb/Portfolio/blob/main/My-Dice-Game/Images/" + randomDiceImage;
+var imageSource = "My-Dice-Game/Images/" + randomDiceImage;
 
 var image2 = document.querySelectorAll("img")[1];
 
