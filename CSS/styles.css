@@ -343,17 +343,21 @@ footer {
   #contact {
     padding: 1rem;
   }
+  p{
+    font-size: 1rem;
+  }
   .about-container {
     width: 100%;
   }
   .about-img {
-    width: 65%;
-    height: 65%;
+    width: 67%;
+    height: 67%;
   }
   .accordion-body {
     height: 15rem;
   }
   .portfolio-text {
+    font-size: 1rem;
     padding: 0 2rem 1rem;
   }
   
